@@ -1,0 +1,17 @@
+#include "cfgEventHandlers.hpp"
+
+class cfgFunctions {
+    class PIG {
+        #include "cfgFunctions.hpp"
+    };
+};
+
+class CfgSounds
+{
+   class CustomLaternOnOff
+   {
+      name = "CustomLaternOnOff"; // Name for mission editor
+      sound[] = {"Sounds\toggle_lantern.ogg", db-0, 1.0};  // was 25
+      titles[] = {0, ""};
+   };
+};
