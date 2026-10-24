@@ -16,6 +16,7 @@
         -
 */
 ["PIG_lantern_turnedOnOff", {
+    if (!(isNull objectParent _this) && !(_this getVariable ["PIG_lantern_isOn", false])) exitWith {};
     _this call PIG_fnc_lantern_onOff
 }] call CBA_fnc_addEventHandler;
 
