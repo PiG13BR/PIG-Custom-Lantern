@@ -37,7 +37,7 @@ if (hasInterface) then {
         };
 
         // L (press for 1 secound)
-        private _id = [DIK_L, [false, false, false], {["PIG_lantern_turnedOnOff", player] call CBA_fnc_globalEvent}, "keydown", "L_KEY_FLASHLIGHT", false, 1] call CBA_fnc_addKeyHandler;
+        private _id = [DIK_L, [false, false, true], {["PIG_lantern_turnedOnOff", player] call CBA_fnc_globalEvent}, "keydown", "L_KEY_FLASHLIGHT", false, 1] call CBA_fnc_addKeyHandler;
         player setVariable ["PIG_keyHandlerID", _id];
 
         // Force turn off flashlights on entering vehicle
